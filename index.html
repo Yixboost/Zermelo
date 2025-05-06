@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zermelo Dashboard</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <style>
+    body {
+      font-family: system-ui, Segoe UI, Arial, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  <!-- Splash Loading Screen -->
+  <div id="splash-screen">
+    <div class="splash-content">
+      <span class="splash-icon">
+        <i class="fa-solid fa-square" style="color: #3dc0fa; font-size: 4rem; transform: rotate(45deg);"></i>
+      </span>
+      <h2 class="splash-title mt-3">Zermelo Dashboard</h2>
+      <div class="splash-spinner mt-4">
+        <i class="fa-solid fa-circle-notch fa-spin fa-2x"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid main-bg vh-100 py-3 px-3">
+    <div class="row h-100">
+      <!-- Sidebar -->
+      <div class="col-2 h-100">
+        <div class="sidebar d-flex flex-column justify-content-between h-100 rounded-4 p-4">
+          <div>
+            <div class="d-flex align-items-center mb-3">
+              <span class="diamond-icon me-2">
+                <i class="fa-solid fa-square fa-lg" style="color: #3dc0fa; transform: rotate(45deg);"></i>
+              </span>
+              <span class="fs-2 sidebar-title">Zermelo</span>
+            </div>
+            <hr class="sidebar-rule mt-1 mb-2" />
+            <ul class="list-unstyled sidebar-menu">
+              <li class="fs-4 mb-1 nav-item">
+                <i class="fa-solid fa-calendar-day me-2 nav-icon"></i>Dag
+              </li>
+              <li class="fs-4 mb-1 nav-item">
+                <i class="fa-solid fa-table-list me-2 nav-icon"></i>Rooster
+              </li>
+              <li class="fs-4 mb-1 nav-item">
+                <i class="fa-solid fa-users me-2 nav-icon"></i>Klassen
+              </li>
+              <li class="fs-4 mb-3 nav-item">
+                <i class="fa-solid fa-chalkboard-user me-2 nav-icon"></i>Docenten
+              </li>
+            </ul>
+          </div>
+          <div>
+            <hr class="sidebar-rule mt-4 mb-2" />
+            <span class="fs-4 nav-item">
+              <i class="fa-solid fa-gear me-2 nav-icon"></i>Instellingen
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- Main Content -->
+      <div class="col-10 h-100">
+        <div class="content-area h-100 rounded-4 px-3 py-2 d-flex flex-column justify-content-between">
+          <div class="row h-100 g-3">
+            <div class="col-7 h-100">
+              <div class="main-box h-100 d-flex align-items-center justify-content-center rounded-4">
+                <span class="main-box-text">Emthy box</span>
+              </div>
+            </div>
+            <div class="col-5 h-100 d-flex flex-column justify-content-between">
+              <div class="sub-box h-50 mb-3 rounded-4 p-4 d-flex flex-column justify-content-center align-items-center clock-box">
+                <div id="clock-time" class="clock-time fw-bold text-center">15:59</div>
+                <hr class="clock-sep my-2" />
+                <div id="clock-date" class="clock-date">Dinsdag. 5 mei</div>
+                <div class="clock-weather d-flex align-items-center mt-2">
+                  <i class="fa-solid fa-cloud-showers-heavy me-2" style="color:#fff;font-size:1.3em;"></i>
+                  <span class="fw-bold">Regen</span>, 14 <span>&#8451;</span>
+                </div>
+              </div>
+              <div class="sub-box h-50 mt-3 rounded-4 d-flex align-items-center justify-content-center">
+                <span class="main-box-text">Emthy box</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/scripts.js"></script>
+</body>
+</html>
