@@ -29,13 +29,16 @@ updateClock();
 window.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     const splash = document.getElementById('splash-screen');
-    if(splash) {
+    if (splash) {
       splash.style.opacity = '0';
       setTimeout(() => {
         splash.setAttribute('hidden', '');
-      }, 700);
+        window.location.href = "/app/start";
+      }, 700); 
+    } else {
+      window.location.href = "/app/start";
     }
-  }, 1100);
+  }, 1100); 
 });
 
 // --- Startpage calendar list ---
